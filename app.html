@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dutaku - Make Income In Your Day</title>
+    <!-- Using CDN -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+<script>
+    // Replace this with your Firebase config
+    var firebaseConfig = {
+        apiKey: "YOUR_API_KEY",
+        authDomain: "YOUR_AUTH_DOMAIN",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_STORAGE_BUCKET",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+
+<!-- Local Installation (if using npm) -->
+<!-- Make sure to install firebase via npm: npm install firebase -->
+<!-- Include the appropriate path to your firebase.js file -->
+<!--<script src="path/to/firebase.js"></script>-->
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: mediumaquamarine;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            color: mediumaquamarine;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input,
+        textarea,
+        button {
+            display: block;
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: mediumaquamarine;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Dutaku</h1>
+        <p>Make Income with Dutaku App</p>
+    </header>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Feature 1: Boost Your Productivity</li>
+            <li>Feature 2: Stay Organized Anywhere</li>
+            <li>Feature 3: Seamless Collaboration</li>
+            <li>Feature 4: Secure and Private</li>
+        </ul>
+    </section>
+
+    <section id="download">
+        <h2>Download Dutaku App Now!</h2>
+        <p>Available on the App Store and Google Play</p>
+        <button>Download Now</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dutaku . All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
